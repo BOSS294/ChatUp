@@ -1,0 +1,137 @@
+/* General Body Styling */
+body {
+    background-color: #201F1F; /* Black background */
+    color: #FFFFFF; /* White text color */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF; /* White text for headings */
+    margin: 0;
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+/* Paragraph Styling */
+p {
+    color: #E0E0E0; /* Slightly lighter text for paragraphs */
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+/* Anchor Tags (Links) */
+a {
+    color: #FFFFFF; /* White text for links */
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #B0B0B0; /* Light grey for hover state */
+    text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+    background-color: #333333; /* Dark background for buttons */
+    color: #FFFFFF; /* White text color */
+    border: 1px solid #444444; /* Slightly lighter border */
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:hover, button:focus {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #201F1F; /* Black text color on hover */
+    border-color: #201F1F; /* Black border on hover */
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+    background-color: #333333; /* Dark background for inputs */
+    color: #FFFFFF; /* White text color */
+    border: 1px solid #444444; /* Slightly lighter border */
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: #FFFFFF; /* White border on focus */
+    outline: none;
+}
+
+/* Select Dropdown Styles */
+select {
+    background-color: #333333; /* Dark background */
+    color: #FFFFFF; /* White text color */
+    border: 1px solid #444444; /* Slightly lighter border */
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #444444; /* Darker border for table cells */
+    padding: 0.5rem;
+    color: #FFFFFF; /* White text color */
+}
+
+th {
+    background-color: #333333; /* Dark background for headers */
+    text-align: left;
+}
+
+/* List Styles */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Code and Preformatted Text */
+code, pre {
+    background-color: #201F1F; /* Black background for code */
+    color: #00FF00; /* Green text for code */
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+/* Blockquote Styles */
+blockquote {
+    border-left: 4px solid #FFFFFF; /* White border on the left */
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #E0E0E0; /* Slightly lighter text */
+    font-style: italic;
+}
