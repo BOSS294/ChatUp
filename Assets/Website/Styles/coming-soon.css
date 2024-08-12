@@ -3,17 +3,15 @@
 
 /* Coming Soon Container */
 .coming-soon {
-    background-color: #201F1F; /* Black background */
     color: #FFFFFF; /* White text */
     text-align: center;
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
     margin: 2rem auto;
-    max-width: 600px;
     transform: scale(0.9);
     opacity: 0;
     animation: fadeInScale 1.2s ease-in-out forwards;
+    margin-top: 200px;
+
 }
 
 /* Smooth Animation on Load */
@@ -23,17 +21,51 @@
         opacity: 1;
     }
 }
-
 /* Heading Styling */
 .coming-soon h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #FFFFFF; /* White text */
+    background: linear-gradient(90deg, #ffffff, #cccccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6), 
+                 0 0 30px rgba(255, 255, 255, 0.4);
+    animation: shine 3s infinite linear;
 }
 
 /* Paragraph Styling */
 .coming-soon p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    color: #CCCCCC; /* Light grey text */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    animation: fadeInText 1.5s ease-in-out both;
+    line-height: 1.6;
+}
+
+/* Shine Animation for Heading */
+@keyframes shine {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+/* Fade-in Animation for Paragraph */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Button Container */
