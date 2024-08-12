@@ -1,0 +1,101 @@
+/* Import HK Modular font */
+@import url('https://fonts.googleapis.com/css2?family=HK+Modular:wght@400;700&display=swap');
+
+/* Navbar styling */
+.navbar {
+
+    font-family: 'HK Modular', sans-serif;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    width: fit-content; /* Adjust width to be smaller than 100% */
+    margin: 0 auto; /* Center the navbar horizontally */
+    background-color: rgba(32, 31, 31, 0.95);
+    padding: 10px 20px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: top 0.7s ease-in-out, background-color 0.3s ease;
+    animation: slideDown 1.5s forwards;
+    border-radius: 20px; /* Add rounded corners for a modern look */
+}
+
+/* Navbar logo styling */
+.navbar-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-right: 30px;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Navbar menu styling */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+.navbar-menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #ffffff; /* Solid white background */
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.3), /* 3D drop shadow */
+        inset 0 -4px 6px rgba(0, 0, 0, 0.4), /* Inner shadow at the bottom */
+        inset 0 4px 4px rgba(255, 255, 255, 0.9); /* Highlight on top */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    animation: loadEffect 0.6s ease-in-out forwards; /* Load animation */
+}
+
+/* Hover effects for navbar buttons */
+.navbar-menu li a:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text color */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.5), /* Enhanced drop shadow */
+        inset 0 -6px 8px rgba(255, 255, 255, 0.4), /* Highlight at the bottom */
+        inset 0 6px 10px rgba(0, 0, 0, 0.7); /* Inner shadow on top */
+}
+
+/* Load animation for buttons */
+@keyframes loadEffect {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Slide down animation */
+@keyframes slideDown {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 20px; /* Navbar will stop at 20px from the top */
+    }
+}
+
+/* Content styling for testing */
+.content {
+    padding: 150px 20px;
+    text-align: center;
+}
