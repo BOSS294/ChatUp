@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="../../Website/Styles/main.css">
     <link rel="stylesheet" href="../../Website/Resources/nav.css">
     <link rel="stylesheet" href="../Styles/side-box.css">
+    <link rel="stylesheet" href="../Styles/chat-container.css">
+
 
 </head>
 <body>
-<?php include '../../Website/Resources/nav.php'; ?>
 
 <?php include '../Contents/side-inbox.php'; ?>
+<?php include '../Contents/chat-container.php'; ?>
+
 
 </body>
 </html>

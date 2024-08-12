@@ -1,0 +1,115 @@
+/* General Chat Container Styling */
+.chat-container {
+    margin-left: 290px; /* Compensates for the sidebar offset */
+    width: calc(100% - 290px); /* Fill remaining space */
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+    background: #1c1c1c; /* Dark background for better contrast */
+    padding: 20px;
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+/* Chat Header Styling */
+.chat-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #444;
+    margin-bottom: 15px;
+    background: #2c2c2c; /* Slightly lighter background for the header */
+    border-radius: 10px; /* Rounded corners for the header */
+}
+
+.chat-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1f1f1; /* Light text color for better visibility */
+}
+
+.active-status {
+    font-size: 1rem;
+    color: #4CAF50;
+    font-weight: 500; /* Slightly bolder for emphasis */
+    text-shadow: 0 0 8px #4CAF50; /* Glowing green effect */
+    margin-top: 5px; /* Space between name and status */
+}
+
+/* Chat Body Styling */
+.chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 15px;
+    padding-top: 10px;
+    background: #1c1c1c; /* Consistent background color */
+}
+
+/* Chat Message Styling */
+.chat-message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.user1 .user-icon, .user2 .user-icon {
+    width: 50px; /* Slightly larger profile icon */
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user1 .user-icon:hover, .user2 .user-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.user1 .message-content, .user2 .message-content {
+    background-color: #333;
+    padding: 12px 18px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    max-width: 65%;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.4;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.user1 .message-content {
+    background-color: #444;
+}
+
+.user2 .message-content {
+    background-color: #555;
+    margin-left: auto;
+}
+
+.user1 .message-content:hover, .user2 .message-content:hover {
+    background-color: #666;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .chat-container {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .chat-message .message-content {
+        max-width: 80%;
+    }
+}
